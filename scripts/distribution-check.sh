@@ -24,6 +24,7 @@ while IFS= read -r -d '' file; do
   rel="${file#"$ROOT"/}"
   case "$rel" in
     frontend/package-lock.json) continue ;;
+    scripts/distribution-check.sh) continue ;;
   esac
   for pattern in "${PATTERNS[@]}"; do
     if grep -qiE "$pattern" "$file"; then
