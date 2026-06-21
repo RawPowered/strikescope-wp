@@ -1,0 +1,12 @@
+{
+  "default_duration_minutes": 60,
+  "duration_presets": [30, 60, 90],
+  "appointment_types": {
+    "onsite": "On-site visit",
+    "phone": "Phone call",
+    "video": "Video call"
+  },
+  "reminder_offsets_minutes": [1440, 60],
+  "auto_status_on_schedule": true,
+  "auto_status_targets": ["new", "aging", "contacted"]
+}

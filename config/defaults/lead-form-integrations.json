@@ -1,0 +1,32 @@
+{
+  "api_scopes": ["leads:read", "leads:write", "leads:export"],
+  "events": [
+    "lead.created",
+    "lead.status_changed",
+    "lead.assigned",
+    "lead.appointment_scheduled",
+    "lead.appointment_rescheduled",
+    "lead.appointment_cancelled"
+  ],
+  "merge_tags": [
+    "{{leadId}}",
+    "{{firstName}}",
+    "{{lastName}}",
+    "{{fullName}}",
+    "{{email}}",
+    "{{phone}}",
+    "{{street}}",
+    "{{city}}",
+    "{{state}}",
+    "{{zip}}",
+    "{{services}}",
+    "{{status}}",
+    "{{soldPrice}}",
+    "{{salesAgent}}",
+    "{{salesAgentEmail}}",
+    "{{appointmentStart}}",
+    "{{appointmentEnd}}",
+    "{{adminUrl}}",
+    "{{source}}"
+  ]
+}

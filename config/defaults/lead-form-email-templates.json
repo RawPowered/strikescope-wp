@@ -1,0 +1,40 @@
+{
+  "services": {
+    "roofing": {
+      "label": "Roofing",
+      "customer_subject_default": "Thanks for contacting %%COMPANY_NAME%% about your roofing project",
+      "admin_subject_default": "New Roofing lead — %%FULL_NAME%%",
+      "customer_intro": "Thank you for your interest in roofing services. Our licensed roofing team will review your project and follow up to discuss repair, replacement, and storm-ready options for your property."
+    },
+    "kitchen": {
+      "label": "Kitchen Remodeling",
+      "customer_subject_default": "Thanks for contacting %%COMPANY_NAME%% about your kitchen remodel",
+      "admin_subject_default": "New Kitchen Remodeling lead — %%FULL_NAME%%",
+      "customer_intro": "Thank you for your interest in kitchen remodeling. Our design-build team will reach out soon to learn more about your layout, finishes, and timeline for your kitchen renovation."
+    },
+    "bathroom": {
+      "label": "Bathroom Remodeling",
+      "customer_subject_default": "Thanks for contacting %%COMPANY_NAME%% about your bathroom remodel",
+      "admin_subject_default": "New Bathroom Remodeling lead — %%FULL_NAME%%",
+      "customer_intro": "Thank you for your interest in bathroom remodeling. A %%COMPANY_NAME%% specialist will contact you to discuss upgrades, waterproofing, fixtures, and the scope of your bathroom project."
+    },
+    "addons": {
+      "label": "Home Additions",
+      "customer_subject_default": "Thanks for contacting %%COMPANY_NAME%% about your home addition",
+      "admin_subject_default": "New Home Additions lead — %%FULL_NAME%%",
+      "customer_intro": "Thank you for your interest in expanding your living space. Our additions team will follow up to discuss square footage, permitting, and the best approach for your home addition."
+    },
+    "solar": {
+      "label": "Commercial Solar",
+      "customer_subject_default": "Thanks for contacting %%COMPANY_NAME%% about commercial solar",
+      "admin_subject_default": "New Commercial Solar lead — %%FULL_NAME%%",
+      "customer_intro": "Thank you for your interest in commercial solar. Our solar team will contact you to review your facility, energy goals, and next steps for a site-specific proposal."
+    },
+    "multi": {
+      "label": "Multiple Services",
+      "customer_subject_default": "Thanks for contacting %%COMPANY_NAME%% about your projects",
+      "admin_subject_default": "New multi-service lead — %%FULL_NAME%%",
+      "customer_intro": "Thank you for reaching out about multiple home improvement projects. Our team will review everything you selected and follow up with one coordinated plan for your property."
+    }
+  }
+}

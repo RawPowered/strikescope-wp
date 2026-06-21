@@ -1,0 +1,13 @@
+name: Distribution check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scrub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan for forbidden distribution strings
+        run: bash scripts/distribution-check.sh

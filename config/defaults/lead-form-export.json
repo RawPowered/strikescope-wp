@@ -1,0 +1,41 @@
+{
+  "columns": [
+    { "key": "lead_id", "header": "Lead ID" },
+    { "key": "submitted_at", "header": "Submitted At" },
+    { "key": "status", "header": "Status" },
+    { "key": "status_updated_at", "header": "Status Updated At" },
+    { "key": "sold_price", "header": "Sold Price" },
+    { "key": "sales_agent", "header": "Sales Agent" },
+    { "key": "sales_agent_email", "header": "Sales Agent Email" },
+    { "key": "first_name", "header": "First Name" },
+    { "key": "last_name", "header": "Last Name" },
+    { "key": "full_name", "header": "Full Name" },
+    { "key": "email", "header": "Email" },
+    { "key": "phone", "header": "Phone" },
+    { "key": "street", "header": "Street Address" },
+    { "key": "city", "header": "City" },
+    { "key": "state", "header": "State" },
+    { "key": "zip", "header": "ZIP" },
+    { "key": "country", "header": "Country" },
+    { "key": "services", "header": "Services" },
+    { "key": "property_type", "header": "Property Type" },
+    { "key": "timeline", "header": "Timeline" },
+    { "key": "budget", "header": "Budget" },
+    { "key": "notes", "header": "Notes" },
+    { "key": "appointment_start", "header": "Appointment Start" },
+    { "key": "appointment_end", "header": "Appointment End" },
+    { "key": "appointment_status", "header": "Appointment Status" },
+    { "key": "source", "header": "Lead Source" },
+    { "key": "admin_url", "header": "Admin URL" }
+  ],
+  "presets": {
+    "all": { "label": "All leads", "statuses": [] },
+    "open": { "label": "Open pipeline", "statuses": ["new", "aging", "contacted", "scheduled"] },
+    "sold": { "label": "Sold", "statuses": ["sold"] },
+    "lost": { "label": "Lost", "statuses": ["lost"] },
+    "closed": {
+      "label": "Closed",
+      "statuses": ["sold", "lost", "dnq", "dnc", "spam", "blacklisted"]
+    }
+  }
+}

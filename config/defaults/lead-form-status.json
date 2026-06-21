@@ -1,0 +1,16 @@
+{
+  "statuses": {
+    "new": { "label": "New", "color": "#2271b1", "open": true },
+    "aging": { "label": "Aging", "color": "#dba617", "open": true },
+    "contacted": { "label": "Contacted", "color": "#00a32a", "open": true },
+    "scheduled": { "label": "Scheduled", "color": "#8c45ff", "open": true },
+    "sold": { "label": "Sold", "color": "#008a20", "open": false },
+    "lost": { "label": "Lost", "color": "#b32d2e", "open": false },
+    "dnq": { "label": "DNQ", "color": "#646970", "open": false },
+    "dnc": { "label": "DNC", "color": "#646970", "open": false },
+    "spam": { "label": "Spam", "color": "#b32d2e", "open": false },
+    "blacklisted": { "label": "Blacklisted", "color": "#1c1c1c", "open": false }
+  },
+  "aging_business_days": 3,
+  "open_statuses": ["new", "aging", "contacted", "scheduled"]
+}

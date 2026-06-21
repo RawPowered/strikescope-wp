@@ -1,0 +1,226 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+#strikescope-form-root,
+.strikescope-form-embed {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+#strikescope-form-root,
+#strikescope-form-root *,
+#strikescope-form-root *::before,
+#strikescope-form-root *::after {
+  box-sizing: border-box;
+}
+
+/* Scoped preflight — Tailwind base reset lives here, not on the whole page. */
+#strikescope-form-root img,
+#strikescope-form-root video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#strikescope-form-root button,
+#strikescope-form-root input,
+#strikescope-form-root textarea,
+#strikescope-form-root select {
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+#strikescope-form-root button {
+  cursor: pointer;
+}
+
+.strikescope-form-embed {
+  margin: 0 auto;
+  font-family: Montserrat, 'Segoe UI', system-ui, sans-serif;
+}
+
+.strikescope-form-root .strikescope-form-embed {
+  padding: 0;
+}
+
+/*
+ * Embed typography uses px, not rem — TheGem sets html to 62.5% (10px root),
+ * so rem-based Tailwind utilities render tiny inside the contact column.
+ */
+.strikescope-form-embed-mode {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1c1c1c;
+}
+
+.strikescope-form-embed-mode h1,
+.strikescope-form-embed-mode h2,
+.strikescope-form-embed-mode h3,
+.strikescope-form-embed-mode .slf-embed-heading,
+.strikescope-form-embed-mode .slf-step-title {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+
+.strikescope-form-embed-mode .text-xs { font-size: 12px !important; }
+.strikescope-form-embed-mode .text-sm { font-size: 14px !important; }
+.strikescope-form-embed-mode .text-base { font-size: 16px !important; }
+.strikescope-form-embed-mode .text-lg { font-size: 18px !important; }
+.strikescope-form-embed-mode .text-xl { font-size: 20px !important; }
+.strikescope-form-embed-mode .text-3xl { font-size: 30px !important; }
+
+.strikescope-form-embed-mode .slf-embed-header {
+  margin-bottom: 12px;
+}
+
+.strikescope-form-embed-mode .slf-embed-heading {
+  font-size: 28px !important;
+  margin: 0 0 4px !important;
+}
+
+.strikescope-form-embed-mode .slf-embed-subheading {
+  font-size: 16px !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+}
+
+.strikescope-form-embed-mode .slf-step-title {
+  font-size: 18px !important;
+}
+
+.strikescope-form-embed-mode .slf-step-subtitle,
+.strikescope-form-embed-mode .slf-hint,
+.strikescope-form-embed-mode .slf-muted,
+.strikescope-form-embed-mode .slf-note,
+.strikescope-form-embed-mode .slf-footer {
+  font-size: 15px !important;
+}
+
+.strikescope-form-embed-mode .slf-section-label,
+.strikescope-form-embed-mode .slf-label {
+  font-size: 16px !important;
+}
+
+.strikescope-form-embed-mode .slf-option-title {
+  font-size: 16px !important;
+}
+
+.strikescope-form-embed-mode .slf-option-desc,
+.strikescope-form-embed-mode .slf-service-desc {
+  font-size: 14px !important;
+}
+
+.strikescope-form-embed-mode .slf-service-title {
+  font-size: 16px !important;
+}
+
+.strikescope-form-embed-mode .slf-input,
+.strikescope-form-embed-mode .slf-textarea {
+  font-size: 16px !important;
+}
+
+.strikescope-form-embed-mode .slf-btn-primary,
+.strikescope-form-embed-mode .slf-btn-secondary {
+  font-size: 15px !important;
+  min-height: unset !important;
+  height: auto !important;
+  line-height: 1.2 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  padding: 12px 20px !important;
+}
+
+.strikescope-form-embed-mode .slf-trust-title {
+  font-size: 13px !important;
+}
+
+.strikescope-form-embed-mode .slf-trust-sub {
+  font-size: 12px !important;
+}
+
+/* Service grid — explicit CSS so theme cannot collapse to stacked bars */
+.strikescope-form-embed-mode .slf-service-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .strikescope-form-embed-mode .slf-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.strikescope-form-embed-mode .slf-service-card {
+  display: block !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  padding: 16px 18px !important;
+  text-align: left !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  white-space: normal !important;
+  font-size: 16px !important;
+}
+
+.strikescope-form-embed-mode .slf-service-card p {
+  margin: 0;
+}
+
+.strikescope-form-embed-mode .slf-option-card {
+  min-height: 0 !important;
+  height: auto !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+.strikescope-form-embed-mode button,
+.strikescope-form-embed-mode input,
+.strikescope-form-embed-mode textarea,
+.strikescope-form-embed-mode label,
+.strikescope-form-embed-mode p,
+.strikescope-form-embed-mode span {
+  font-family: inherit;
+}
+
+/* Elementor / TheGem contact column integration */
+.elementor-column.strikescope-lead-form-column,
+.elementor-element.strikescope-lead-form-host {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.elementor-element.strikescope-lead-form-host .elementor-widget-container,
+.elementor-column.strikescope-lead-form-column .elementor-widget-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#strikescope-form-root.strikescope-form-root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .strikescope-form-embed {
+    padding-inline: 0.5rem;
+  }
+
+  .strikescope-form-embed-mode .slf-embed-heading {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .strikescope-form-embed-mode .slf-service-grid {
+    grid-template-columns: 1fr;
+  }
+}

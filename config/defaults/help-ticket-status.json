@@ -1,0 +1,11 @@
+{
+  "statuses": {
+    "open": { "label": "Open", "color": "#2271b1", "open": true, "notify_customer": false },
+    "waiting_customer": { "label": "Waiting on customer", "color": "#dba617", "open": true, "notify_customer": true },
+    "waiting_staff": { "label": "Waiting on staff", "color": "#646970", "open": true, "notify_customer": false },
+    "in_progress": { "label": "In progress", "color": "#8c45ff", "open": true, "notify_customer": true },
+    "resolved": { "label": "Resolved", "color": "#00a32a", "open": false, "notify_customer": true },
+    "closed": { "label": "Closed", "color": "#1c1c1c", "open": false, "notify_customer": true }
+  },
+  "open_statuses": ["open", "waiting_customer", "waiting_staff", "in_progress"]
+}

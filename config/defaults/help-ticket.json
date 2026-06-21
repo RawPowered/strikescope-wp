@@ -1,0 +1,39 @@
+{
+  "cpt": "strikescope_help_ticket",
+  "rest_submit": "/wp-json/strikescope/v1/help-ticket/submit",
+  "rest_inbound": "/wp-json/strikescope/v1/help-ticket/inbound",
+  "rest_tickets": "/wp-json/strikescope/v1/help-ticket/tickets",
+  "rest_email_test": "/wp-json/strikescope/v1/help-ticket/email/test",
+  "status_config": "config/help-ticket-status.json",
+  "email_templates_dir": "templates/emails/help-ticket",
+  "email_template_keys": [
+    "new-ticket-customer",
+    "new-ticket-staff",
+    "staff-reply",
+    "status-waiting_customer",
+    "status-in_progress",
+    "status-resolved",
+    "status-closed"
+  ],
+  "merge_tags": [
+    "%%TICKET_NUMBER%%",
+    "%%TICKET_ID%%",
+    "%%CUSTOMER_NAME%%",
+    "%%CUSTOMER_EMAIL%%",
+    "%%ISSUE_SUMMARY%%",
+    "%%SERVICE_ADDRESS%%",
+    "%%STATUS_LABEL%%",
+    "%%STATUS_NOTE%%",
+    "%%STAFF_NAME%%",
+    "%%STAFF_MESSAGE%%",
+    "%%TICKET_ADMIN_URL%%",
+    "%%SUBMISSION_DATE%%",
+    "%%LOGO_URL%%",
+    "%%PHONE%%",
+    "%%PHONE_TEL%%",
+    "%%SITE_URL%%",
+    "%%LICENSES_FOOTER%%"
+  ],
+  "default_inbound_domain": "inbound.%%SITE_URL%%",
+  "ticket_number_prefix": "HT"
+}

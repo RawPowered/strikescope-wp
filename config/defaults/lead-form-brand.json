@@ -1,0 +1,19 @@
+{
+  "company_name": "Your Company",
+  "legal_name": "",
+  "site_url": "",
+  "logo_url": "",
+  "colors": {
+    "primary": "#2563eb",
+    "primary_dark": "#1d4ed8",
+    "background": "#ffffff",
+    "secondary": "#eff6ff",
+    "text": "#1c1c1c",
+    "muted": "#64748b",
+    "muted_light": "#94a3b8",
+    "border": "#dbeafe"
+  },
+  "font_family": "Montserrat, Arial, Helvetica, sans-serif",
+  "offices": [],
+  "licenses_footer": "Licensed & Insured"
+}
