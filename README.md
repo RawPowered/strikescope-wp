@@ -243,7 +243,7 @@ flowchart LR
 5. **Help Desk inbound** — rotate `inbound_secret` if leaked; restrict inbound route to provider IP ranges at the firewall when possible.
 6. **Sales agents** — use the dedicated role instead of sharing administrator accounts.
 7. **Backups** — encrypt backups containing `wp_options` and lead/ticket tables.
-8. **File integrity** — install only from [GitHub Releases](https://github.com/GatoGodMode/strikescope-wp/releases) or your own `release.sh` / `release.ps1` build after CI passes.
+8. **File integrity** — install only from [GitHub Releases](https://github.com/RawPowered/strikescope-wp/releases) or your own `release.sh` / `release.ps1` build after CI passes.
 
 ### What this plugin does not provide
 
@@ -256,7 +256,7 @@ flowchart LR
 
 ## Quick start
 
-1. Install from **[Releases](https://github.com/GatoGodMode/strikescope-wp/releases)** (`strikescope-wp-x.x.x.zip`) or clone this repo and run `release.ps1` / `release.sh` after building assets.
+1. Install from **[Releases](https://github.com/RawPowered/strikescope-wp/releases)** (`strikescope-wp-x.x.x.zip`) or clone this repo and run `release.ps1` / `release.sh` after building assets.
 2. **Plugins → Add New → Upload Plugin** → activate **StrikeScopeWP**.
 3. Create a contact page with the shortcode:
 
