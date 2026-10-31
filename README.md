@@ -215,7 +215,7 @@ flowchart LR
     Settings[(Options)]
   end
 
-  subgraph Egress["Optional egress — you enable"]
+  subgraph Egress["Optional egress: you enable"]
     CF["Cloudflare Turnstile<br/>token + IP"]
     Geo["Nominatim / maps links<br/>address geocoding"]
     Cal2["Google / Microsoft<br/>OAuth tokens"]
@@ -286,7 +286,7 @@ Requires **Node 20+** and **npm**.
 ./build-assets.sh          # Linux/macOS
 ./build-assets.ps1         # Windows PowerShell
 
-# WordPress-ready zip (runtime files only — no frontend/ or node_modules/)
+# WordPress-ready zip (runtime files only; no frontend/ or node_modules/)
 ./release.sh
 ./release.ps1
 ```
